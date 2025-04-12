@@ -3,301 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Atmanam Homeopathic Clinic – Empathise Towards Health with holistic treatments for skin, respiratory, gastrointestinal, musculoskeletal, cardiovascular, and common health issues.">
-    <meta name="keywords" content="Homeopathy, musculoskeletal disorders, cardiovascular diseases, skin disorders, asthma, acidity, headache, fever">
     <title>Atmanam Homeopathic Clinic</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8f4;
+            color: #2c3e50;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            line-height: 1.6;
         }
-
         header {
-            background-color: #388e3c;
+            background-color: #2ecc71;
             color: white;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        header img {
-            width: 100px;
-            height: auto;
-        }
-
-        header nav {
-            display: flex;
-            gap: 1rem;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        header nav a:hover {
-            background-color: #2c6f2f;
-        }
-
-        .container {
-            padding: 2rem;
-        }
-
-        .category {
-            margin-top: 2rem;
-        }
-
-        .disease {
-            margin-bottom: 1.5rem;
-            background: #ffffff;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #2e7d32;
-            color: white;
-            padding: 1rem;
+            padding: 20px;
             text-align: center;
         }
-
-        .contact-button {
-            display: inline-block;
-            background-color: #43a047;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #27ae60;
+        }
+        nav a {
             color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
             text-decoration: none;
-            margin-top: 1rem;
-            transition: background-color 0.3s;
+            padding: 15px;
+            display: inline-block;
         }
-
-        .contact-button:hover {
-            background-color: #388e3c;
+        nav a:hover {
+            background-color: #1e8449;
         }
-
-        form {
-            margin-top: 1.5rem;
-            background: #fff;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .container {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
         }
-
-        form label {
-            display: block;
-            margin-bottom: 0.5rem;
+        .section {
+            margin-bottom: 40px;
         }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 0.75rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .contact {
+            background-color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
         }
-
-        form button {
-            padding: 0.75rem 1.5rem;
-            background-color: #43a047;
+        .whatsapp {
+            margin-top: 10px;
+        }
+        .whatsapp a {
+            background-color: #25D366;
             color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
         }
-
-        @media (max-width: 768px) {
-            header nav {
-                display: block;
-                text-align: center;
-            }
-
-            .container {
-                padding: 1rem;
-            }
-
-            .category {
-                margin-top: 1rem;
-            }
-
-            .contact-button {
-                padding: 0.5rem 1.5rem;
-            }
-
-            form button {
-                width: 100%;
-                padding: 0.75rem;
-            }
+        img.logo {
+            max-width: 120px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <div>
-            <img src="logo.png" alt="Atmanam Logo">
-            <strong style="margin-left: 1rem; font-size: 1.5rem;">Atmanam Homeopathic Clinic</strong>
-        </div>
-        <nav>
-            <a href="#skin">Skin</a>
-            <a href="#respiratory">Respiratory</a>
-            <a href="#git">Gastrointestinal</a>
-            <a href="#musculoskeletal">Musculoskeletal</a>
-            <a href="#cardiovascular">Cardiovascular</a>
-            <a href="#nervous">Nervous System</a>
-            <a href="#endocrine">Endocrine</a>
-            <a href="#common">Common</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <img src="your-logo-path.png" alt="Atmanam Logo" class="logo">
+        <h1>Atmanam Homeopathic Clinic</h1>
+        <p>Empathise Towards Health</p>
     </header>
 
+    <nav>
+        <a href="#about">About</a>
+        <a href="#treatment">Treatment</a>
+        <a href="#history">History</a>
+        <a href="#cases">Cured Cases</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#disease">Disease</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <h1>Welcome to Atmanam Homeopathic Clinic</h1>
-        <p>Empathise Towards Health – A gentle and holistic approach to healing the root cause.</p>
-
-        <div class="category" id="skin">
-            <h2>Skin Disorders</h2>
-            <div class="disease">
-                <h3>Acne</h3>
-                <p><strong>Etiology:</strong> Hormonal changes, oily skin, poor hygiene</p>
-                <p><strong>Symptoms:</strong> Pimples, blackheads, inflammation</p>
-                <p><strong>Remedies:</strong> Hepar Sulph, Silicea, Kali Bromatum</p>
-            </div>
-
-            <div class="disease">
-                <h3>Eczema</h3>
-                <p><strong>Etiology:</strong> Allergies, immune response</p>
-                <p><strong>Symptoms:</strong> Red, itchy, scaly patches</p>
-                <p><strong>Remedies:</strong> Graphites, Sulphur, Natrum Mur</p>
-            </div>
+        <div class="section" id="about">
+            <h2>About Dr. Piyush Lakhani</h2>
+            <p>I'm a passionate Homeopathic Physician committed to providing compassionate, effective treatment using classical homeopathy principles. My aim is to reach patients globally and in remote areas through online consultation and follow-ups.</p>
         </div>
 
-        <div class="category" id="respiratory">
-            <h2>Respiratory System</h2>
-            <div class="disease">
-                <h3>Asthma</h3>
-                <p><strong>Etiology:</strong> Allergens, exercise, infections</p>
-                <p><strong>Symptoms:</strong> Wheezing, breathlessness, chest tightness</p>
-                <p><strong>Remedies:</strong> Arsenic Alb, Spongia, Antimonium Tart</p>
-            </div>
-
-            <div class="disease">
-                <h3>Chronic Cough</h3>
-                <p><strong>Etiology:</strong> Post-viral, pollution, GERD</p>
-                <p><strong>Symptoms:</strong> Dry or productive cough</p>
-                <p><strong>Remedies:</strong> Bryonia, Drosera, Phosphorus</p>
-            </div>
+        <div class="section" id="treatment">
+            <h2>Types of Treatments</h2>
+            <p>I treat a wide variety of chronic and acute conditions with individualized constitutional remedies.</p>
         </div>
 
-        <div class="category" id="git">
-            <h2>Gastrointestinal Tract (GIT)</h2>
-            <div class="disease">
-                <h3>Acidity</h3>
-                <p><strong>Etiology:</strong> Spicy food, stress, irregular meals</p>
-                <p><strong>Symptoms:</strong> Heartburn, sour belching, nausea</p>
-                <p><strong>Remedies:</strong> Nux Vomica, Robinia, Carbo Veg</p>
-            </div>
-
-            <div class="disease">
-                <h3>Irritable Bowel Syndrome (IBS)</h3>
-                <p><strong>Etiology:</strong> Stress, poor digestion, food intolerance</p>
-                <p><strong>Symptoms:</strong> Diarrhea/constipation, bloating</p>
-                <p><strong>Remedies:</strong> Lycopodium, Colocynthis, Aloe Socotrina</p>
-            </div>
+        <div class="section" id="history">
+            <h2>Small History of Homeopathy</h2>
+            <p>Homeopathy is a holistic system of medicine developed by Dr. Samuel Hahnemann based on the principle of "like cures like." It works by stimulating the body's self-healing mechanism.</p>
         </div>
 
-        <!-- Musculoskeletal System -->
-        <div class="category" id="musculoskeletal">
-            <h2>Musculoskeletal System</h2>
-            <div class="disease">
-                <h3>Arthritis</h3>
-                <p><strong>Etiology:</strong> Wear and tear, autoimmune factors</p>
-                <p><strong>Symptoms:</strong> Joint pain, stiffness, swelling</p>
-                <p><strong>Remedies:</strong> Rhus Tox, Ruta, Calcarea Fluor</p>
-            </div>
+        <!-- Additional sections like cases, testimonials, diseases can be added similarly -->
 
-            <div class="disease">
-                <h3>Back Pain</h3>
-                <p><strong>Etiology:</strong> Strain, poor posture, muscle weakness</p>
-                <p><strong>Symptoms:</strong> Lower back pain, radiating pain</p>
-                <p><strong>Remedies:</strong> Arnica, Bryonia, Hypericum</p>
-            </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:+919824549168">+91 98245 49168</a></p>
+        <p>Email: <a href="mailto:dr.piyushlakhani@gmail.com">dr.piyushlakhani@gmail.com</a></p>
+        <div class="whatsapp">
+            <a href="https://wa.me/919824549168" target="_blank">Contact on WhatsApp</a>
         </div>
-
-        <!-- Cardiovascular System -->
-        <div class="category" id="cardiovascular">
-            <h2>Cardiovascular System</h2>
-            <div class="disease">
-                <h3>Hypertension</h3>
-                <p><strong>Etiology:</strong> Stress, obesity, lifestyle factors</p>
-                <p><strong>Symptoms:</strong> Headache, dizziness, chest tightness</p>
-                <p><strong>Remedies:</strong> Glonoinum, Baryta Carb, Lachesis</p>
-            </div>
-
-            <div class="disease">
-                <h3>Palpitations</h3>
-                <p><strong>Etiology:</strong> Anxiety, anemia, heart disease</p>
-                <p><strong>Symptoms:</strong> Irregular heartbeats, dizziness</p>
-                <p><strong>Remedies:</strong> Crataegus, Aurum, Kalmia</p>
-            </div>
-        </div>
-
-        <!-- Nervous System -->
-        <div class="category" id="nervous">
-            <h2>Nervous System</h2>
-            <div class="disease">
-                <h3>Insomnia</h3>
-                <p><strong>Etiology:</strong> Stress, anxiety, hormonal imbalance</p>
-                <p><strong>Symptoms:</strong> Difficulty falling asleep, restless sleep</p>
-                <p><strong>Remedies:</strong> Coffea, Nux Vomica, Chamomilla</p>
-            </div>
-
-            <div class="disease">
-                <h3>Neuropathy</h3>
-                <p><strong>Etiology:</strong> Diabetes, infections, alcohol abuse</p>
-                <p><strong>Symptoms:</strong> Numbness, tingling, burning sensation</p>
-                <p><strong>Remedies:</strong> Hypericum, Lachesis, Causticum</p>
-            </div>
-        </div>
-
-        <!-- Endocrine System -->
-        <div class="category" id="endocrine">
-            <h2>Endocrine System</h2>
-            <div class="disease">
-                <h3>Hypothyroidism</h3>
-                <p><strong>Etiology:</strong> Autoimmune disorders, iodine deficiency</p>
-                <p><strong>Symptoms:</strong> Fatigue, weight gain, cold intolerance</p>
-                <p><strong>Remedies:</strong> Calcarea Carbonica, Lycopodium, Sepia</p>
-            </div>
-
-            <div class="disease">
-                <h3>Diabetes</h3>
-                <p><strong>Etiology:</strong> Insulin resistance, genetic factors</p>
-                <p><strong>Symptoms:</strong> Excessive thirst, frequent urination, fatigue</p>
-                <p><strong>Remedies:</strong> Phosphoric Acid, Natrum Mur, Uranium Nitricum</p>
-            </div>
-        </div>
-
-        <div class="category" id="common">
-            <h2>Common Complaints</h2>
-            <div class="disease">
-                <h3>Fever</h3>
-                <p><strong>Etiology:</strong> Infections, inflammation</p>
-                <p><strong>Symptoms:</strong> High temperature, chills, weakness</p>
-                <p><strong>Remedies:</strong> Belladonna, Gelsemium, Aconite</p>
-            </div>
-
-            <div class="disease">
-                <h3>Headache</h3>
-                <p><strong>Etiology:</strong> Stress, eye strain, migraine</p>
-                <p><strong>Symptoms:</strong> Dull/Throbbing pain, nausea, photophobia</p>
-                <p><strong>Remedies:</strong> Nat Mur
+    </div>
+</body>
+</html>
